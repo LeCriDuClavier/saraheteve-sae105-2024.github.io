@@ -1,0 +1,455 @@
+
+* {
+    box-sizing: border-box;
+    
+}
+body, header{
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+    font-family: 'Amatic SC', cursive;
+    background-image: url('image/murnoirfond.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: repeat;
+    color: #FCF4F4;
+
+}
+a {
+    text-decoration: none;
+    border: none;
+}
+
+header {
+    z-index : 100;
+    position: fixed;
+    font-family: "Permanent Marker", cursive;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #a52a2a;
+    height: 10vh; 
+    align-items: center;
+    text-align : center;
+}
+
+
+
+.reserverBouton {
+    position: absolute;
+    top: 50%;
+    right: 30px; 
+    padding: 5px 15px; 
+    background-color: #fafafa;
+    color: #000;
+    font-size: 0.8em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #fafafa; 
+    text-decoration: none;
+    transform: translateY(-50%); 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.reserverBouton:hover {
+    background-color: #000; 
+    box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff; 
+    color: white;
+}
+
+
+
+.logo{
+    vertical-align: middle; 
+    width: 50px; 
+    height: auto;
+}
+
+
+nav {
+    z-index : 100;
+    position: fixed;
+    height:40px;
+    margin-top: 10vh;
+    background-color: #2C2C2C;
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+   
+}
+.chalethome{
+    vertical-align: middle; 
+    width: 30px; 
+    height: auto;
+    align-items: center;
+}
+
+
+nav a {
+    font-family: 'Amatic SC', cursive; 
+    color: white; 
+    font-size: 28px; 
+    padding: 0 20px; 
+    transition: color 0.3s ease; }
+
+nav a:hover {
+    color: #fafafa; 
+    text-shadow: 
+        1px 1px 2px #ffffff, 
+        -1px -1px 2px #ff0000; 
+}
+
+#accueil {
+    clear: both;
+    background-color: rgba(30, 26, 26, 0.75); 
+    padding: 150px 20px;   
+    text-align: center;        
+    color: #FCF4F4;   
+}
+
+#accueil h2 {
+    font-family: 'Permanent Marker', cursive; 
+    font-size: 2.5em;                        
+    margin-bottom: 20px;               
+}
+
+#accueil p {
+    font-size: 1.6em;                    
+    margin-bottom: 20px;                   
+}
+
+.foodtruck-img {
+    width: 80%;      
+    opacity: 100%;         
+    max-width: 600px;                   
+    height: auto;                       
+    border-radius: 10px;                 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+.show-ingredients {
+    padding: 10px 15px;
+    font-size: 1em;
+    background-color: #C1191F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px auto;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.show-ingredients:hover {
+    background-color: #A31517;
+}
+
+
+
+
+
+
+
+.menu-boite {
+    z-index: 1;
+    clear: both;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+}
+
+#menus h1 {
+    font-family: 'Permanent Marker', cursive; 
+    text-align: center; 
+    color: #fafafa; 
+    margin: 30px 0px 20px 0px; 
+    font-size: 2.5em; 
+}
+
+#menus {
+    text-align: center;
+    padding: 50px 10%;
+}
+
+
+
+#menus h2 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.5em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    
+}
+
+
+
+.cartePlat {
+    background-color: #fafafa;
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ingredientss {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Poppins', Arial, sans-serif;
+
+}
+
+.PrixduPlat {
+    font-size: 1.8em;
+    color: #ff6347;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+
+.photoPlat img {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+}
+
+
+
+.nomDuPlat {
+    font-family: 'Raleway', sans-serif;
+    color: #0D0D0D ;
+    font-size: 1.2em;
+    padding: 10px;
+    background-color: #fafafa;
+        font-weight: bold;
+}
+
+
+.cartePlat:hover {
+    transform: scale(1.05);
+
+}
+
+
+
+
+
+
+
+
+.accompagnements, .boissons {
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: left;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.accompagnements li, .boissons li {
+    margin-bottom: 10px;
+}
+
+.accompagnements li::before, .boissons li::before {
+    content: "• ";
+    color: #FF6347;
+}
+
+
+
+
+
+
+
+
+
+
+#about {
+    padding: 60px 20px;
+    color: #FCF4F4;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.about-boite {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#about h1 {
+    font-size: 2.5em;
+    font-family: 'Permanent Marker', cursive;
+    color: #fafafa;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#about h2 {
+    font-size: 2em;
+    text-decoration: underline;
+    color: #fafafa;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-family: 'Amatic SC', cursive; 
+}
+
+#about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+#about p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+.btnNousTrouver {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #C1191F; 
+    color: #FCF4F4;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px; 
+    transition: background-color 0.3s ease;
+}
+
+.btnNousTrouver:hover {
+    background-color: #A10F1A; 
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background: linear-gradient(135deg, #5B605D, #3E3E3E); 
+    color: #FCF4F4; 
+    padding: 20px;
+    text-align: center;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+
+.footer-contenu {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.info p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.info a {
+    color: #FCF4F4;
+    text-decoration: none;
+}
+
+.info a:hover {
+    color: #C1191F;
+}
+
+
+.image-media {
+    margin: 20px 0;
+}
+
+.image-icon {
+    margin: 0 15px;
+}
+
+.image-icon img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.image-icon:hover img {
+    transform: scale(1.1); 
+}
+
+
+
+footer {
+    background: linear-gradient(135deg, #5B605D, #3E3E3E); 
+    color: #FCF4F4; 
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-contenu {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.info p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.info a {
+    color: #FCF4F4; 
+    text-decoration: none;
+}
+
+.info a:hover {
+    color: #C1191F; 
+}
+
+
+.image-media {
+    margin: 20px 0;
+}
+
+.image-icon {
+    margin: 0 15px;
+}
+
+.image-icon img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.image-icon:hover img {
+    transform: scale(1.1); 
+}
+
+
+.instagram-carré {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #FCF4F4; 
+}
+

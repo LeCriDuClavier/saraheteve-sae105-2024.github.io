@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomad Chalet foodtruck</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const buttons = document.querySelectorAll(".show-ingredients");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", () => {
+     
+            const ingredientsDiv = button.previousElementSibling.previousElementSibling;
+
+            if (ingredientsDiv.style.display === "none" || ingredientsDiv.style.display === "") {
+               
+                ingredientsDiv.style.display = "block";
+                button.textContent = "Masquer les ingrédients";
+            } else {
+                
+                ingredientsDiv.style.display = "none";
+                button.textContent = "Afficher les ingrédients";
+            }
+        });
+    });
+});
+
+</script>    
+
+    <header>
+        <h1>
+            Nomad 
+            <a href="image/logoNomad.jpeg" target="_blank">
+                <img src="image/logoNomad.jpeg" alt="Logo Nomad Chalet" class="logo">
+            </a>
+            Chalet
+            <a href="reserver.html" class="reserverBouton">Réservez!</a>
+
+        </h1>
+        
+        
+    </header>
+    
+    <nav>
+        <div >
+            <a href="#accueil"> Accueil</a>
+            <a href="#menus"> Nos menus</a>
+            <a href="#top"> <img src="image/cabane.png" alt=" " class="chalethome"></a>
+            <a href="#about"> About us</a>
+            <a href="#contact"> Nous contacter</a>
+        </div>
+
+    </nav>
+    <section id="accueil">
+        <div class="boite">
+            <h2>Bienvenue chez Nomad Chalet !</h2>
+            <p>Nous apportons les saveurs de Savoie directement à vous avec notre food truck. Profitez de nos plats traditionnels montagnards, partout où nous nous arrêtons !</p>
+            <img src="image/imagefoodtruck.jpg" alt="Nomad Chalet Food Truck" class="foodtruckImg">
+        </div>
+    </section>
+
+
+    <section id="menus">
+        <h1>Nos menus</h1>
+    
+        
+        <h2>Sandwichs Savoyards</h2>
+        <div class="menu-boite">
+            <div class="cartePlat">
+                <div class="photoPlat">
+                    <img src="image/fromagepain.jpg" alt="Raclette sur pain">
+                </div>
+                <div class="nomDuPlat">Le Classique Raclette</div>
+                <div class="ingredientss">
+                    Pain frais, raclette fondue, jambon cru de Savoie, oignons caramélisés
+                </div>
+                <div class="PrixduPlat">7.50€</div>
+            </div>
+    
+            <div class="cartePlat">
+                <div class="photoPlat">
+                    <img src="image/charcutteriefromage.jpg" alt="Charcuterie fromage">
+                </div>
+                <div class="nomDuPlat">Le Savoyard au Reblochon</div>
+                <div class="ingredientss">
+                    Pain ciabatta, reblochon fondu, poitrine fumée, roquette, confiture d’oignon
+                </div>
+                <div class="PrixduPlat">8.00€</div>
+            </div>
+    
+            <div class="cartePlat">
+                <div class="photoPlat">
+                    <img src="image/croissantraclettejambon.jpg" alt="Croissant raclette jambon">
+                </div>
+                <div class="nomDuPlat">Le Croissant Savoyard</div>
+                <div class="ingredientss">
+                    Croissant, raclette, pomme de terre, jambon fumé de Savoie
+                </div>
+                <div class="PrixduPlat">7.50€</div>
+            </div>
+    
+            <div class="cartePlat">
+                <div class="photoPlat">
+                    <img src="image/hotdogsavoie.jpg" alt="Hot dog savoyard">
+                </div>
+                <div class="nomDuPlat">Le Hot Dog Savoyard</div>
+                <div class="ingredientss">
+                    Saucisse de Savoie, beaufort fondu ou raclette fondue
+                </div>
+                <div class="PrixduPlat">7.50€</div>
+            </div>
+    
+            <div class="cartePlat">
+                <div class="photoPlat">
+                    <img src="image/tartiflettesandwi.webp" alt="Tartiflette Sandwich">
+                </div>
+                <div class="nomDuPlat">Le Tartiflette Sandwich</div>
+                <div class="ingredientss">
+                    Pain baguette ou focaccia, reblochon fondu, pommes de terre rissolées, jambon ou lardons, oignons
+                </div>
+                <div class="PrixduPlat">8.50€</div>
+            </div>
+    
+            <div class="cartePlat">
+                <div class="photoPlat">
+                    <img src="image/dindereblochon.webp" alt="Dinde reblochon">
+                </div>
+                <div class="nomDuPlat">Le Montagnard au Poulet</div>
+                <div class="ingredientss">
+                    Pain de campagne, dinde, reblochon, noix concassées, mâche, miel
+                </div>
+                <div class="PrixduPlat">9.00€</div>
+            </div>           
+        </div>
+
+        <div class="cartePlat">
+            <div class="photoPlat">
+                <img src="image/tomeraclette.jpg" alt="Teste de JS">
+            </div>
+            <div class="nomDuPlat">Le test dynamique</div>
+            <div class="ingredientss" style="display: none;">
+                Pain de campagne, dinde, reblochon, noix concassées, mâche, miel
+            </div>
+            <div class="PrixduPlat">9.00€</div>
+            <button class="show-ingredients">Afficher les ingrédients</button>
+        </div>
+        
+
+
+
+
+        <h2>Tartiflettes</h2>
+        <div class="menu-boite">
+            <div class="cartePlat">
+                <div class="photoPlat">
+                    <img src="image/tartiflettegranddplat.jpg" alt="Tartiflette">
+                </div>
+                <div class="nomDuPlat">La Tartiflette Savoyarde</div>
+                <div class="ingredientss">
+                    Pommes de terre, lardons, oignons et reblochon
+                </div>
+                <div class="PrixduPlat">18€ le kilo</div>
+            </div>
+        </div>
+
+    
+        <h2>Accompagnements Savoyards</h2>
+        <ul class="accompagnements">
+            <li>Petite barquette de frites (150g) - 2.50€</li>
+            <li>Grande barquette de frites (300g) - 4.00€</li>
+            <li>Croutons de raclette - 4.00€ (petite portion), 6.00€ (grande portion)</li>
+        </ul>
+    
+       
+        <h2>Boissons</h2>
+        <ul class="boissons">
+            <li>Jus de pomme de Savoie : 2.50€</li>
+            <li>Bière blonde savoyarde 33cl : 4.50€</li>
+            <li>Bière ambrée savoyarde 33cl : 4.50€</li>
+            <li>Bière Classique Heineken, 33cl : 3.00€</li>
+            <li>Eau minérale plate ou pétillante 50cl : 1.50€</li>
+            <li>Les canettes : 2.00€
+                <ul>
+                    <li>Coca 33cl</li>
+                    <li>Fanta orange 33cl</li>
+                    <li>Ice Tea pêche 33cl</li>
+                
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+        <section id="about">
+            <div class="about-boite">
+                <h1>Welcome to Nomad Chalet!</h1>
+                <p>
+                    At Nomad Chalet, we bring the heart of the Alps to your plate, wherever you are ! Born from  love of Savoyard cuisine and a desire to make it accessible far
+                    beyond the mountains, our foodtruck delivers the authentic flavors pf the Franch Alpsstraight to your hands. 
+                    Our goal is to share the cozy taste of Alpine food.
+                    From melty raclette sandwiches to  tasty tartiflette bowls, every bite is made with care, love and the best local ingrdients.
+                </p>
+        
+                <h2>Why should you come?</h2>
+                <p>
+                    We combine the cozy dream of a mountain chalet with the freedom to roam. 
+                    By bringing the Alps to you wherever we go, we are creating a unique experience with great food, activities, and tradition, all in one! 
+                    Join us on this delicious journey. Come, taste the Alps, and let Nomad Chalet’s food transport you to the mountains with every bite!
+                </p>
+        
+                <h2>The story behind Nomad Chalet</h2>
+                <p>
+                    It all started with a trip to the French Alps. 
+                    On a cold evening near Annecy, I tasted raclette for the first time. 
+                    It was a moment of pure joy. 
+                    But back in Normandy, I wondered, "Why can’t we enjoy this incredible Savoyard food everywhere?" 
+                    So Nomad Chalet was born! Since Easter 2018, we have brought the flavors of the Alps to Normandy and beyond, sharing a taste of tradition wherever we go.
+                </p>
+        
+                <h2>Where to find us?</h2>
+                <p>
+                    Nomad Chalet travels around the mountains in the Savoie region, with occasional stops in Raven, Annecy, and parts of Albertville. 
+                    Check out our schedule on Instagram to see where we’ll be each week. 
+                    We’re never far from your favorite spot!
+                </p>
+                <a href="reserver.html" class="btnNousTrouver"> Click me to see our schedule</a>
+        
+                <h2>Bringing you good food the right way</h2>
+                <p>
+                    We believe that food should not only taste incredibly good but also respect the planet and animals. 
+                    We only use Alpine-sourced and sustainable ingredients from respectful farms. 
+                    Our food truck is fully electric, helping us reduce waste and support sustainability. 
+                    We also use eco-friendly packaging to minimize our carbon footprint while maintaining high-quality standards.
+                </p>
+            </div>
+        </section>
+        <footer id="contact">
+            <div class="footer-contenu">
+               
+                <div class="info">
+                    <p>Email: <a href="mailto:contact@nomadchalet.com">contact@nomadchalet.com</a></p>
+                    <p>Phone: <a href="tel:+330235817606">+33 02 35 81 76 06</a></p>
+                </div>
+        
+                
+                <div class="image-media">
+                    <a href="https://twitter.com/nomadchalet" target="_blank" class="image-icon">
+                        <img src="image/twitter.png" alt="Twitter">
+                    </a>
+                    <a href="https://instagram.com/nomadchalet" target="_blank" class="image-icon">
+                        <img src="image/instagram.png" alt="Instagram">
+                    </a>
+                </div>
+        
+               
+                <p>@nomadchalet</p>
+            </div>
+        </footer>
+        
+</body>
+
+
+
+
+
+
+</html>
